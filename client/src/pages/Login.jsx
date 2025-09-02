@@ -21,7 +21,7 @@ export default function Login() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-pink-50 to-purple-100">
       <form onSubmit={handleSubmit} className="bg-white p-8 rounded-3xl shadow-lg w-80 space-y-6">
-        <h2 className="text-2xl font-bold text-center text-purple-700">Welcome Back!</h2>
+        <h2 className="text-2xl font-bold text-center text-pink-600">Welcome Back!</h2>
         <input
           type="email"
           placeholder="Email"
@@ -38,7 +38,7 @@ export default function Login() {
           className="w-full p-3 border border-purple-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-300"
           required
         />
-        <button className="w-full bg-purple-500 text-white p-3 rounded-xl font-semibold hover:bg-purple-600 transition">
+        <button className="w-full bg-pink-500 text-white p-3 rounded-xl font-semibold hover:bg-purple-600 transition">
           Login
         </button>
         <p className="text-center text-sm text-gray-500">

@@ -228,54 +228,59 @@ export default function Register() {
           </div>
 
           {/* Right side - Illustration */}
-          <div className="hidden md:block md:w-1/2 bg-gradient-to-br from-purple-500 to-pink-500 p-10 text-white">
-            <div className="flex flex-col justify-center h-full">
-              <h2 className="text-3xl font-bold mb-6">Welcome to MotherCare</h2>
-              <p className="text-lg mb-8 opacity-90">
+          <div className="hidden md:block md:w-1/2 bg-gradient-to-br from-purple-500 to-pink-500 p-8 text-white relative overflow-hidden">
+            {/* Pregnant woman illustration at the top */}
+            <div className="flex justify-center mb-6 mt-4">
+              <img 
+                src="./src/assets/women.g"
+                className="w-64 h-64 object-contain"
+              />
+            </div>
+            
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold mb-4">Welcome to MotherCare</h2>
+              <p className="text-lg opacity-90">
                 Your trusted companion through the beautiful journey of pregnancy and motherhood.
               </p>
-              
-              <div className="space-y-4 mb-10">
-                <div className="flex items-center">
-                  <div className="bg-white bg-opacity-20 p-2 rounded-full mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <span>Personalized weekly pregnancy updates</span>
+            </div>
+            
+            <div className="space-y-4 mb-8">
+              <div className="flex items-center justify-center">
+                <div className="bg-white bg-opacity-20 p-2 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
                 </div>
-                
-                <div className="flex items-center">
-                  <div className="bg-white bg-opacity-20 p-2 rounded-full mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <span>Expert health tracking tools</span>
-                </div>
-                
-                <div className="flex items-center">
-                  <div className="bg-white bg-opacity-20 p-2 rounded-full mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <span>Supportive community of mothers</span>
-                </div>
+                <span>Personalized weekly pregnancy updates</span>
               </div>
               
-              <div className="bg-white bg-opacity-10 p-5 rounded-2xl">
-                <p className="text-sm italic">
-                  "This platform made my pregnancy journey so much easier. The weekly updates were incredibly helpful!"
-                </p>
-                <div className="flex items-center mt-3">
-                  <div className="w-10 h-10 bg-white bg-opacity-30 rounded-full mr-3"></div>
-                  <div>
-                    <p className="font-medium">Sarah M.</p>
-                    <p className="text-sm opacity-75">First-time mom</p>
-                  </div>
+              <div className="flex items-center justify-center">
+                <div className="bg-white bg-opacity-20 p-2 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
                 </div>
+                <span>Expert health tracking tools</span>
               </div>
+              
+              <div className="flex items-center justify-center">
+                <div className="bg-white bg-opacity-20 p-2 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <span>Supportive community of mothers</span>
+              </div>
+            </div>
+            
+            {/* Decorative elements */}
+            <div className="absolute bottom-0 left-0 w-full flex justify-between opacity-20">
+              <svg width="100" height="100" viewBox="0 0 100 100" className="transform -translate-x-8 translate-y-8">
+                <circle cx="50" cy="50" r="40" fill="white" />
+              </svg>
+              <svg width="80" height="80" viewBox="0 0 100 100" className="transform translate-x-12 -translate-y-4">
+                <circle cx="50" cy="50" r="40" fill="white" />
+              </svg>
             </div>
           </div>
         </div>

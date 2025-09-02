@@ -42,7 +42,7 @@ export default function HealthProfile() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-green-50 to-blue-50">
       <form onSubmit={handleSubmit} className="bg-white p-8 rounded-3xl shadow-lg w-96 space-y-6">
-        <h2 className="text-2xl font-bold text-center text-blue-700">Health Profile</h2>
+        <h2 className="text-2xl font-bold text-center text-pink-600">Health Profile</h2>
 
         <input
           type="number"
@@ -101,7 +101,7 @@ export default function HealthProfile() {
 
         <button
           type="submit"
-          className="w-full p-3 rounded-xl bg-blue-500 text-white font-semibold hover:bg-blue-600 transition"
+          className="w-full p-3 rounded-xl bg-pink-600 text-white font-semibold hover:bg-blue-600 transition"
         >
           Save Health Profile
         </button>

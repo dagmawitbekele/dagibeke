@@ -4,7 +4,6 @@ import connectDB from "./config/db.js"; // your MongoDB connection
 import authRoutes from "./routes/authRoutes.js";
 import pregnancyRoutes from "./routes/pregnancyRoutes.js";
 import healthRoutes from "./routes/healthRoutes.js";
-import chatRoutes from "./routes/chatRoutes.js";
 import cors from "cors";
 
 dotenv.config();
@@ -19,8 +18,6 @@ app.use(express.json()); // parse JSON body
 app.use("/api/auth", authRoutes);
 app.use("/api/pregnancy", pregnancyRoutes);
 app.use("/api/health", healthRoutes);
-app.use("/api/chat", chatRoutes); // AI Chatbot
-
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
